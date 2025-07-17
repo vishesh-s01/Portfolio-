@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .typing-animation {
+            border-right: 2px solid #3b82f6;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { border-color: #3b82f6; }
+            51%, 100% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-gray-800">Vishesh Sharma</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#projects" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <img src="images/avatar.jpg" alt="Vishesh" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg border-4 border-white">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                    Hi, I'm <span class="text-blue-600">Vishesh Sharma</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6">
+                    <span id="typing-text" class="typing-animation">Full Stack Web Developer</span>
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Code is like humor. When you have to explain it, it's bad.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300 flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="animate-bounce">
+                <a href="#about" class="text-blue-600 hover:text-blue-800">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Passionate developer with a love for creating innovative web solutions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">My Story</h3>
+                    <p class="text-gray-600 mb-6">
+                         I’m Vishesh Sharma, a Bachelor of Computer Applications (BCA)
+              student with a strong academic background in web development,
+              programming, and computer fundamentals. During my studies, I
+              developed practical skills in front-end development using HTML,
+              CSS, JavaScript, and Tailwind CSS.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        I specialize in modern web technologies and enjoy solving complex problems with elegant 
+                        solutions. When I'm not coding, you'll find me exploring new technologies, contributing 
+                        to open-source projects, or enjoying a good cup of coffee.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fab fa-html5 text-orange-600 text-xl mr-2"></i>
+                                <span class="font-semibold">HTML5</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-orange-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fab fa-css3-alt text-blue-600 text-xl mr-2"></i>
+                                <span class="font-semibold">CSS3</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fab fa-js-square text-yellow-600 text-xl mr-2"></i>
+                                <span class="font-semibold">JavaScript</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-yellow-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fab fa-react text-blue-400 text-xl mr-2"></i>
+                                <span class="font-semibold">React</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-400 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                 <i class="fab fa-node-js text-green-600 text-xl mr-2"></i>
+                                <span class="font-semibold">Node.js</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-database text-purple-600 text-xl mr-2"></i>
+                                <span class="font-semibold">MongoDB</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-600 h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Education & Qualification</h3>
+                <div class="relative">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-blue-600"></div>
+                    
+                    <div class="flex flex-col space-y-8">
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8">
+                                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                                    <h4 class="font-bold text-lg text-gray-800 mb-2">Bachelor of Computer Applications (BCA)</h4>
+                                    <p class="text-gray-600 text-sm mb-2">2023 - 2026</p>
+                                    <p class="text-gray-600">PCTE Group of Institutes</p>
+                                </div>
+                            </div>
+                            <div class="w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="flex-1 pl-8"></div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="flex-1 pr-8"></div>
+                            <div class="w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="flex-1 text-left pl-8">
+                                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                                    <h4 class="font-bold text-lg text-gray-800">+2 (Commerce)</h4>
+                                    <p class="text-blue-600 font-semibold">with 87%</p>
+                                    <p class="text-gray-600 text-sm mb-2"> in 2023</p>
+                                    <p class="text-gray-600">Atam Devki Niketan School</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="flex-1 text-right pr-8">
+                                <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                                    <h4 class="font-bold text-lg text-gray-800">10<sub>th</sub></h4>
+                                    <p class="text-blue-600 font-semibold">with 85%</p>
+                                    <p class="text-gray-600 text-sm mb-2">in 2021</p>
+                                    <p class="text-gray-600">Atam Devki Niketan School</p>
+                                </div>
+                            </div>
+                            <div class="w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="flex-1 pl-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Projects</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Here are some of my recent projects that showcase my skills and creativity
+                </p>
+            </div>
+            
+            <iv class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/logo.jpg" alt="Travel booking website" class="w-50 h-40 object-fill">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Travel Booking Website</h3>
+                        <p class="text-gray-600 mb-4">Plan, explore, and book dream vacations all in one place with our seamless travel booking platform.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">HTML</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">CSS</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 flex items-center">
+                                <i class="fab fa-github mr-1"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/events.png" alt="Events showcase" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Event ShowCase </h3>
+                        <p class="text-gray-600 mb-4">Explore the event showcase featuring various highlights, visual
+            content, and organized experiences across different programs.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">CSS</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 flex items-center">
+                                <i class="fab fa-github mr-1"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/e-commerce.jpeg" alt="Weather Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Savana</h3>
+                        <p class="text-gray-600 mb-4">A basic e-commerce interface that fetches and displays product data
+            using an API with a clean layout and responsive design.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Css</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">js</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">MongoDB</span>
+    
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                <i class="fas fa-external-link-alt mr-1"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800 flex items-center">
+                                <i class="fab fa-github mr-1"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    I'm always open to discussing new opportunities and interesting projects
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">vishesh01327@email.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+91 7009912453</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Location</h4>
+                                <p class="text-gray-600">Ludhiana, Punjab</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-900 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Vishesh Sharma</h3>
+                    <p class="text-gray-400 mb-4">Full Stack Web Developer passionate about creating innovative web solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i>
+                            vishesh01327@email.com
+                        </p>
+                        <p class="text-gray-400">
+                            <i class="fas fa-phone mr-2"></i>
+                            +91 7009912453
+                        </p>
+                        <p class="text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Ludhiana, Punjab
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 Vishesh Sharma. All rights reserved. | Made with ❤️ and Tailwind CSS
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+       
+        // Typing animation
+        const typingText = document.getElementById('typing-text');
+        const phrases = [
+            'Full Stack Web Developer',
+            'React Specialist',
+            'Node.js Expert',
+            'UI/UX Enthusiast',
+            'Problem Solver'
+        ];
+        
+        let currentPhrase = 0;
+        let currentChar = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const current = phrases[currentPhrase];
+            
+            if (isDeleting) {
+                typingText.textContent = current.substring(0, currentChar - 1);
+                currentChar--;
+            } else {
+                typingText.textContent = current.substring(0, currentChar + 1);
+                currentChar++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && currentChar === current.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && currentChar === 0) {
+                isDeleting = false;
+                currentPhrase = (currentPhrase + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        // Start typing animation
+        typeEffect();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add some custom CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .animate-fade-in {
+                animation: fadeIn 0.6s ease-out;
+            }
+            
+            /* Hover effects for project cards */
+            .hover\\:scale-105:hover {
+                transform: scale(1.05);
+            }
+            
+            .hover\\:shadow-xl:hover {
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            
+            /* Smooth transitions */
+            * {
+                transition: all 0.3s ease;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
